@@ -63,7 +63,7 @@ int main(){
             // Calculate hidden layer activations
             for(int j = 0; j < HIDDEN_NODES; j++){
                 hidden_layer[j] = 0;
-                for (int k = 0;k < INPUT_NODES; j++){
+                for (int k = 0;k < INPUT_NODES; k++){
                     hidden_layer[j] += input_data[i][k] * weights[k][j];
                 }
                 hidden_layer[j] = sigmoid(hidden_layer[j]);
